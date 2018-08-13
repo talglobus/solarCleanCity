@@ -10,11 +10,11 @@ const rendErr = require('../rendErr');
 
 router.get('/', function(req, res, next) {
 	let data = {
-		deviceKey: req.params.get('deviceKey') || null,
-		coordinates: req.params.get('coordinates') || null,
-		dataKey: req.params.get('dataKey') || null,
-		dataValue: req.params.get('dataValue') || null,
-		time: req.params.get('time') || null
+		deviceKey: req.query.deviceKey || null,
+		coordinates: req.query.coordinates || null,
+		dataKey: req.query.dataKey || null,
+		dataValue: req.query.dataValue || null,
+		time: req.query.time || null
 	};
 
 	if (data.deviceKey === null || data.coordinates === null || data.dataKey === null || data.dataValue === null
