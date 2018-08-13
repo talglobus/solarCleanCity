@@ -8,8 +8,7 @@ let router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	res.send("hey");
-	// res.render('index', { title: 'solarCleanCity' });
+	res.render('index', { title: 'solarCleanCity' });
 });
 
 module.exports = router;
